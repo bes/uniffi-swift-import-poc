@@ -1,0 +1,9 @@
+module MyUniFFIModule {
+    header "ffiFFI.h"
+    header "frontend_1FFI.h"
+    header "shared_1FFI.h"
+    export *
+    use "Darwin"
+    use "_Builtin_stdbool"
+    use "_Builtin_stdint"
+}

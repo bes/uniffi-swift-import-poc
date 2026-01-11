@@ -1,0 +1,13 @@
+[package]
+name = "my-ios"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+uniffi = { version = "0.30.0" }
+shared-1 = { path = "../shared/shared-1" }
+frontend-1 = { path = "../frontend/frontend-1" }
+frontend-2 = { path = "../frontend/frontend-2" }
