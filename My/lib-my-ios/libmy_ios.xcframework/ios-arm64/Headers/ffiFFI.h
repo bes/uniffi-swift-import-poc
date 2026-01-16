@@ -245,7 +245,8 @@ typedef void (*UniffiForeignFutureCompleteVoid)(uint64_t, UniffiForeignFutureRes
 #endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_MY_IOS_FN_FUNC_IOS_FUNCTION_1
 #define UNIFFI_FFIDEF_UNIFFI_MY_IOS_FN_FUNC_IOS_FUNCTION_1
-void uniffi_my_ios_fn_func_ios_function_1(RustBuffer shared_1, RustBuffer shared_2, RustBuffer record_1, RustCallStatus *_Nonnull out_status
+void uniffi_my_ios_fn_func_ios_function_1(RustCallStatus *_Nonnull out_status
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_FFI_MY_IOS_RUSTBUFFER_ALLOC

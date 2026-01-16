@@ -456,11 +456,8 @@ fileprivate struct FfiConverterString: FfiConverter {
         writeBytes(&buf, value.utf8)
     }
 }
-public func iosFunction1(shared1: Shared1Enum, shared2: Shared2Enum, record1: Frontend1Record)  {try! rustCall() {
-    uniffi_my_ios_fn_func_ios_function_1(
-        FfiConverterTypeShared1Enum_lower(shared1),
-        FfiConverterTypeShared2Enum_lower(shared2),
-        FfiConverterTypeFrontend1Record_lower(record1),$0
+public func iosFunction1()  {try! rustCall() {
+    uniffi_my_ios_fn_func_ios_function_1($0
     )
 }
 }
@@ -480,12 +477,10 @@ private let initializationResult: InitializationResult = {
     if bindings_contract_version != scaffolding_contract_version {
         return InitializationResult.contractVersionMismatch
     }
-    if (uniffi_my_ios_checksum_func_ios_function_1() != 33841) {
+    if (uniffi_my_ios_checksum_func_ios_function_1() != 1828) {
         return InitializationResult.apiChecksumMismatch
     }
 
-    uniffiEnsureFrontend1Initialized()
-    uniffiEnsureShared1Initialized()
     return InitializationResult.ok
 }()
 
