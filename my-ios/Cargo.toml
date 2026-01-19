@@ -7,7 +7,10 @@ edition = "2024"
 crate-type = ["staticlib"]
 
 [dependencies]
-uniffi = { version = "0.30.0" }
+uniffi = { version = "0.31.0" }
 shared-1 = { path = "../shared/shared-1" }
 frontend-1 = { path = "../frontend/frontend-1" }
 frontend-2 = { path = "../frontend/frontend-2" }
+
+[patch.crates-io]
+uniffi = { git = "https://github.com/mhammond/uniffi-rs.git", rev = "b20a5008cc41ef277cb5b35998468576def676ff" }

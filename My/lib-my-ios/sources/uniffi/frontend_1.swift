@@ -7,8 +7,8 @@ import Foundation
 // Depending on the consumer's build setup, the low-level FFI code
 // might be in a separate module, or it might be compiled inline into
 // this module. This is a bit of light hackery to work with both.
-#if canImport(frontend_1FFI)
-import frontend_1FFI
+#if canImport(MyUniFFIModule)
+import MyUniFFIModule
 #endif
 
 fileprivate extension RustBuffer {
@@ -466,6 +466,8 @@ public struct Frontend1Record: Equatable, Hashable {
     public init(name: String) {
         self.name = name
     }
+
+    
 
     
 }

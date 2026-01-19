@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-uniffi = { version = "0.30.0", features = ["cli"] }
+uniffi = { version = "0.31.0", features = ["cli"] }
 
 [build-dependencies]
-uniffi = { version = "0.30.0", features = ["build"] }
+uniffi = { version = "0.31.0", features = ["build"] }
+
+[patch.crates-io]
+uniffi = { git = "https://github.com/mhammond/uniffi-rs.git", rev = "b20a5008cc41ef277cb5b35998468576def676ff" }

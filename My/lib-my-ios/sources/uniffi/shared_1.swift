@@ -7,8 +7,8 @@ import Foundation
 // Depending on the consumer's build setup, the low-level FFI code
 // might be in a separate module, or it might be compiled inline into
 // this module. This is a bit of light hackery to work with both.
-#if canImport(shared_1FFI)
-import shared_1FFI
+#if canImport(MyUniFFIModule)
+import MyUniFFIModule
 #endif
 
 fileprivate extension RustBuffer {
@@ -467,6 +467,8 @@ public enum Shared1Enum: Equatable, Hashable {
 
 
 
+
+
 }
 
 #if compiler(>=6)
@@ -529,6 +531,8 @@ public enum Shared2Enum: Equatable, Hashable {
     
     case variant1
     case variant2
+
+
 
 
 

@@ -1,0 +1,8 @@
+[my_ios]
+crate_root = "my-ios"
+
+[frontend_1]
+crate_root = "frontend/frontend-1"
+
+[shared_1]
+crate_root = "shared/shared-1"

@@ -1,6 +1,6 @@
-use shared_1::Shared1Enum;
-
 uniffi::setup_scaffolding!("frontend_1");
+
+use shared_1::Shared1Enum;
 
 #[derive(uniffi::Record, Debug)]
 pub struct Frontend1Record {

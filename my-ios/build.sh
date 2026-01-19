@@ -49,6 +49,7 @@ cargo run --bin uniffi-swift \
           --headers \
           --modulemap \
           --module-name MyUniFFIModule \
+          --crate-metadata ../uniffi_crates.toml \
           --modulemap-filename module.modulemap
 popd
 

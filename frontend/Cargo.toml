@@ -8,5 +8,8 @@ version = "0.1.0"
 edition = "2024"
 
 [workspace.dependencies]
-uniffi = "0.30.0"
+uniffi = "0.31.0"
 shared-1 = { path = "../shared/shared-1" }
+
+[patch.crates-io]
+uniffi = { git = "https://github.com/mhammond/uniffi-rs.git", rev = "b20a5008cc41ef277cb5b35998468576def676ff" }
