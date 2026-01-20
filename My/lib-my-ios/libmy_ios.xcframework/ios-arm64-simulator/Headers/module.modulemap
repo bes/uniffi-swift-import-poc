@@ -1,7 +1,7 @@
 module MyUniFFIModule {
     header "ffi_my_ios.h"
-    header "ffi_my_ios.h"
-    header "ffi_my_ios.h"
+    header "frontend1FFI.h"
+    header "shared1FFI.h"
     export *
     use "Darwin"
     use "_Builtin_stdbool"
